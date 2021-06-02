@@ -180,12 +180,12 @@ const App = () => {
 		})
 	}
 	const removeTaskL = (id) => {
-		store.dispath(removeTask(id));
+		store.dispatch(removeTask(id));
 	};
 	const changeTaskL = () => {
 		const { id, text } = currentTask;
 
-		store.dispath(changeTask({ id, text }));
+		store.dispatch(changeTask({ id, text }));
 	}
 
 	const closeWindow = async () => {
